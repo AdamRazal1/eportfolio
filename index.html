@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adam Razali — Data Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Adam Razali, a Computer Science (Data Engineering) student at Universiti Teknologi Malaysia. Data pipelines, applications, and coursework." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Adam Razali — Data Engineering Portfolio" />
+  <meta property="og:description" content="Computer Science (Data Engineering) student at UTM. Building data pipelines and applications." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand">AR<span>.</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__kicker fade-up">Hello, I'm</p>
+        <h1 class="hero__title fade-up">Adam Razali</h1>
+        <p class="hero__subtitle fade-up">
+          Computer Science <span class="hl">(Data Engineering)</span> student at
+          Universiti Teknologi Malaysia
+        </p>
+        <p class="hero__lead fade-up">
+          I build data pipelines and applications — turning raw data into something
+          useful. Currently exploring distributed processing, business intelligence,
+          and applied AI through hands-on, work-based learning projects.
+        </p>
+        <div class="hero__cta fade-up">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__socials fade-up">
+          <a href="https://github.com/AdamRazal1" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+          <a href="mailto:adamrazali07@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+          <!-- TODO: add your LinkedIn URL below -->
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__kicker">01 — About</p>
+        <h2 class="section__title">A bit about me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I'm an undergraduate Computer Science student specialising in
+              <strong>Data Engineering</strong> at Universiti Teknologi Malaysia (UTM).
+              My coursework follows a work-based learning (WBL) model, so most of what
+              I learn comes from building real things — data pipelines, applications,
+              and analytics on top of messy, real-world data.
+            </p>
+            <p>
+              I enjoy the full journey of data: ingesting it, cleaning it, moving it
+              through scalable pipelines, and turning it into dashboards and decisions.
+              I'm comfortable across the stack, from databases and software engineering
+              to high-performance processing and applied AI.
+            </p>
+            <p class="about__note">
+              This portfolio is a work in progress — I'll keep adding projects and
+              write-ups as I go. 🚧
+            </p>
+          </div>
+          <aside class="about__facts">
+            <div class="fact"><span class="fact__label">Focus</span><span class="fact__value">Data Engineering</span></div>
+            <div class="fact"><span class="fact__label">University</span><span class="fact__value">UTM</span></div>
+            <div class="fact"><span class="fact__label">Based in</span><span class="fact__value">Malaysia</span></div>
+            <div class="fact"><span class="fact__label">Status</span><span class="fact__value">Open to internships</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__kicker">02 — Skills</p>
+        <h2 class="section__title">What I work with</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Data Engineering</h3>
+            <ul class="chips">
+              <li>Apache Spark</li>
+              <li>ETL / Data Pipelines</li>
+              <li>Microsoft Azure</li>
+              <li>High-Performance Processing</li>
+              <li>Data Modelling</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; Analytics</h3>
+            <ul class="chips">
+              <li>SQL</li>
+              <li>Databases</li>
+              <li>Business Intelligence</li>
+              <li>Data Visualisation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software &amp; Web</h3>
+            <ul class="chips">
+              <li>Software Engineering</li>
+              <li>Application Development</li>
+              <li>Web Development</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Foundations &amp; AI</h3>
+            <ul class="chips">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Network Communication</li>
+              <li>CNN / Deep Learning</li>
+              <li>Generative AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__kicker">03 — Projects</p>
+        <h2 class="section__title">Selected work</h2>
+        <p class="section__lead">A few projects I built through my coursework. More on the way.</p>
+
+        <div class="projects">
+          <!-- Project: eHadir -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Application Development</span>
+              <div class="project__links">
+                <a href="https://ehadir-beta.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo" title="Live demo">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project__title">eHadir</h3>
+            <p class="project__desc">
+              A web-based attendance application built for the Application Development
+              course. Deployed and live on Vercel.
+            </p>
+            <ul class="project__stack">
+              <li>Web App</li>
+              <li>Vercel</li>
+            </ul>
+            <a href="https://ehadir-beta.vercel.app/" target="_blank" rel="noopener" class="project__cta">
+              Visit live site →
+            </a>
+          </article>
+
+          <!-- Project: PPG Data Pipeline -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Data Engineering</span>
+              <div class="project__links">
+                <a href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3843%20-%20Special%20Topic%20in%20Data%20Engineering%20(WBL)/Project" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project__title">PPG Manufacturing Data Pipeline</h3>
+            <p class="project__desc">
+              An industry data-engineering project modelling a coatings manufacturer's
+              operations — materials, suppliers, inventory, production, purchasing, and
+              sales — into a unified, query-ready dataset.
+            </p>
+            <ul class="project__stack">
+              <li>Data Pipeline</li>
+              <li>Apache Spark</li>
+              <li>Azure</li>
+              <li>CSV / ETL</li>
+            </ul>
+            <a href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3843%20-%20Special%20Topic%20in%20Data%20Engineering%20(WBL)" target="_blank" rel="noopener" class="project__cta">
+              View on GitHub →
+            </a>
+          </article>
+
+          <!-- Project: placeholder for future work -->
+          <article class="project project--ghost">
+            <div class="project__top">
+              <span class="project__tag">Coming soon</span>
+            </div>
+            <h3 class="project__title">More projects on the way</h3>
+            <p class="project__desc">
+              I'm continuously building. New write-ups and case studies will land here —
+              check back soon.
+            </p>
+            <span class="project__cta project__cta--muted">Stay tuned</span>
+          </article>
+          <!-- To add a project, copy a <article class="project"> ... </article> block above and edit it. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION / COURSEWORK ===================== -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <p class="section__kicker">04 — Education</p>
+        <h2 class="section__title">Coursework &amp; learning</h2>
+        <p class="section__lead">
+          Bachelor of Computer Science (Data Engineering) — Universiti Teknologi Malaysia
+        </p>
+
+        <div class="timeline">
+          <!-- Semester 5 -->
+          <div class="term">
+            <div class="term__head">
+              <h3>Semester 5</h3>
+              <span class="term__badge">Latest</span>
+            </div>
+            <div class="courses">
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3106%20-%20Application%20Development%20(WBL)" target="_blank" rel="noopener">
+                <span class="course__code">SECP3106</span>
+                <span class="course__name">Application Development (WBL)</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3133%20-%20High%20Performance%20Data%20Processing" target="_blank" rel="noopener">
+                <span class="course__code">SECP3133</span>
+                <span class="course__name">High Performance Data Processing</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3213%20-%20Business%20Intelligence" target="_blank" rel="noopener">
+                <span class="course__code">SECP3213</span>
+                <span class="course__name">Business Intelligence</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3843%20-%20Special%20Topic%20in%20Data%20Engineering%20(WBL)" target="_blank" rel="noopener">
+                <span class="course__code">SECP3843</span>
+                <span class="course__name">Special Topic in Data Engineering (WBL)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Semester 3 -->
+          <div class="term">
+            <div class="term__head">
+              <h3>Semester 3</h3>
+            </div>
+            <div class="courses">
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%203/SECJ2013%20Data%20Structure%20and%20Algorithm" target="_blank" rel="noopener">
+                <span class="course__code">SECJ2013</span>
+                <span class="course__name">Data Structure and Algorithm</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%203/SECP2523%20Database%20(WBL)" target="_blank" rel="noopener">
+                <span class="course__code">SECP2523</span>
+                <span class="course__name">Database (WBL)</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%203/SECP3204%20Software%20Engineering%20(WBL)" target="_blank" rel="noopener">
+                <span class="course__code">SECP3204</span>
+                <span class="course__name">Software Engineering (WBL)</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%203/SECP3723%20System%20Development%20Technology%20(WBL)" target="_blank" rel="noopener">
+                <span class="course__code">SECP3723</span>
+                <span class="course__name">System Development Technology (WBL)</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%203/SECR2213%20Network%20Communication" target="_blank" rel="noopener">
+                <span class="course__code">SECR2213</span>
+                <span class="course__name">Network Communication</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section__kicker">05 — Contact</p>
+        <h2 class="section__title">Let's connect</h2>
+        <p class="section__lead">
+          Open to internships, collaborations, and a good conversation about data.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact">
+          <a href="mailto:adamrazali07@gmail.com" class="contact__card">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span class="contact__label">Email</span>
+            <span class="contact__value">adamrazali07@gmail.com</span>
+          </a>
+          <a href="https://github.com/AdamRazal1" target="_blank" rel="noopener" class="contact__card">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">@AdamRazal1</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Adam Razali</span>
+      <span class="footer__made">Built with care · Updated continuously</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
