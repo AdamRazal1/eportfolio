@@ -120,20 +120,22 @@
         <h2 class="section__title">What I work with</h2>
         <div class="skills">
           <div class="skill-group">
-            <h3>Data Engineering</h3>
+            <h3>Data Engineering &amp; HPC</h3>
             <ul class="chips">
-              <li>Apache Spark</li>
+              <li>PySpark</li>
+              <li>Polars</li>
+              <li>Multiprocessing</li>
               <li>ETL / Data Pipelines</li>
+              <li>Web Scraping</li>
               <li>Microsoft Azure</li>
-              <li>High-Performance Processing</li>
-              <li>Data Modelling</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Data &amp; Analytics</h3>
             <ul class="chips">
-              <li>SQL</li>
-              <li>Databases</li>
+              <li>Python (Pandas / NumPy)</li>
+              <li>SQL &amp; Databases</li>
+              <li>Data Mining</li>
               <li>Business Intelligence</li>
               <li>Data Visualisation</li>
             </ul>
@@ -142,18 +144,20 @@
             <h3>Software &amp; Web</h3>
             <ul class="chips">
               <li>Software Engineering</li>
+              <li>Object-Oriented Programming</li>
               <li>Application Development</li>
               <li>Web Development</li>
-              <li>System Design</li>
+              <li>Operating Systems</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Foundations &amp; AI</h3>
             <ul class="chips">
               <li>Data Structures &amp; Algorithms</li>
-              <li>Network Communication</li>
+              <li>Artificial Intelligence</li>
               <li>CNN / Deep Learning</li>
               <li>Generative AI</li>
+              <li>Network Communication</li>
             </ul>
           </div>
         </div>
@@ -168,6 +172,42 @@
         <p class="section__lead">A few projects I built through my coursework. More on the way.</p>
 
         <div class="projects">
+          <!-- Project: Scrape Master (featured) -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">High Performance Data Processing</span>
+              <div class="project__links">
+                <a href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3133%20-%20High%20Performance%20Data%20Processing/Scrape%20master" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project__title">Scrape Master — Carousell HPC Pipeline</h3>
+            <p class="project__desc">
+              An end-to-end big-data pipeline that crawls <strong>200,000+</strong> marketplace
+              listings from Carousell.com.my, cleans them into a structured dataset, then
+              benchmarks five operations across <strong>Pandas, Polars, Multiprocessing, and
+              PySpark</strong>. Polars came out fastest — up to <strong>~49× quicker than
+              Pandas</strong>. I led the team as Group Leader &amp; Data Engineer.
+            </p>
+            <ul class="project__metrics">
+              <li><b>200K+</b><span>listings crawled</span></li>
+              <li><b>4</b><span>engines compared</span></li>
+              <li><b>49×</b><span>peak speed-up</span></li>
+            </ul>
+            <ul class="project__stack">
+              <li>Python</li>
+              <li>Selenium</li>
+              <li>Polars</li>
+              <li>PySpark</li>
+              <li>Pandas</li>
+              <li>Benchmarking</li>
+            </ul>
+            <a href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3133%20-%20High%20Performance%20Data%20Processing/Scrape%20master" target="_blank" rel="noopener" class="project__cta">
+              View on GitHub →
+            </a>
+          </article>
+
           <!-- Project: eHadir -->
           <article class="project">
             <div class="project__top">
@@ -219,18 +259,6 @@
             </a>
           </article>
 
-          <!-- Project: placeholder for future work -->
-          <article class="project project--ghost">
-            <div class="project__top">
-              <span class="project__tag">Coming soon</span>
-            </div>
-            <h3 class="project__title">More projects on the way</h3>
-            <p class="project__desc">
-              I'm continuously building. New write-ups and case studies will land here —
-              check back soon.
-            </p>
-            <span class="project__cta project__cta--muted">Stay tuned</span>
-          </article>
           <!-- To add a project, copy a <article class="project"> ... </article> block above and edit it. -->
         </div>
       </div>
@@ -246,11 +274,28 @@
         </p>
 
         <div class="timeline">
+          <!-- Semester 6 -->
+          <div class="term">
+            <div class="term__head">
+              <h3>Semester 6</h3>
+              <span class="term__badge">Latest</span>
+            </div>
+            <div class="courses">
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%206/SECJ3553%20Artificial%20Intelligence" target="_blank" rel="noopener">
+                <span class="course__code">SECJ3553</span>
+                <span class="course__name">Artificial Intelligence</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%206/SECP3223%20Data%20Analytic%20Programming" target="_blank" rel="noopener">
+                <span class="course__code">SECP3223</span>
+                <span class="course__name">Data Analytic Programming</span>
+              </a>
+            </div>
+          </div>
+
           <!-- Semester 5 -->
           <div class="term">
             <div class="term__head">
               <h3>Semester 5</h3>
-              <span class="term__badge">Latest</span>
             </div>
             <div class="courses">
               <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3106%20-%20Application%20Development%20(WBL)" target="_blank" rel="noopener">
@@ -268,6 +313,27 @@
               <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%205/SECP3843%20-%20Special%20Topic%20in%20Data%20Engineering%20(WBL)" target="_blank" rel="noopener">
                 <span class="course__code">SECP3843</span>
                 <span class="course__name">Special Topic in Data Engineering (WBL)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Semester 4 -->
+          <div class="term">
+            <div class="term__head">
+              <h3>Semester 4</h3>
+            </div>
+            <div class="courses">
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%204/SECJ2154%20Object-Oriented%20Programming" target="_blank" rel="noopener">
+                <span class="course__code">SECJ2154</span>
+                <span class="course__name">Object-Oriented Programming</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%204/SECP2753%20Data%20Mining" target="_blank" rel="noopener">
+                <span class="course__code">SECP2753</span>
+                <span class="course__name">Data Mining</span>
+              </a>
+              <a class="course" href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%204/SECR2043%20Operating%20System" target="_blank" rel="noopener">
+                <span class="course__code">SECR2043</span>
+                <span class="course__name">Operating System</span>
               </a>
             </div>
           </div>
