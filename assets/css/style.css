@@ -292,26 +292,28 @@ a { color: inherit; text-decoration: none; }
 .course__name { font-size: 0.98rem; font-weight: 500; color: var(--text); }
 
 /* ===================== CERTIFICATIONS ===================== */
-.certs { margin-top: 44px; }
-.certs__title { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 18px; }
-.certs__list { display: flex; flex-wrap: wrap; gap: 12px; }
+.certs { margin-top: 48px; }
+.certs__title { font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 22px; }
+.certs__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 18px;
+}
 .cert {
-  display: inline-flex; align-items: center;
-  padding: 12px 18px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 14px; padding: 24px 16px;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-size: 0.92rem; font-weight: 500; color: var(--text);
-  box-shadow: var(--shadow);
-  transition: transform 0.18s ease, border-color 0.2s ease;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  color: var(--text);
+  transition: transform 0.18s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.cert::before {
-  content: "";
-  width: 8px; height: 8px; margin-right: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  flex-shrink: 0;
+.cert img {
+  width: 104px; height: 104px; object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(20, 22, 31, 0.12));
 }
-.cert:hover { transform: translateY(-3px); border-color: var(--accent); }
+.cert__name { font-size: 0.88rem; font-weight: 600; line-height: 1.35; }
+.cert__name em { display: block; font-style: normal; font-weight: 500; color: var(--text-mute); font-size: 0.82rem; margin-top: 2px; }
+.cert:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow-lg); }
 
 /* ===================== CONTACT ===================== */
 .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; max-width: 640px; }
