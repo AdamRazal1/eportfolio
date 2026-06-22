@@ -51,7 +51,7 @@
         <p class="hero__kicker fade-up">Hello, I'm</p>
         <h1 class="hero__title fade-up">Adam Razali</h1>
         <p class="hero__subtitle fade-up">
-          Computer Science <span class="hl">(Data Engineering)</span> student at
+          Final-year Computer Science <span class="hl">(Data Engineering)</span> student at
           Universiti Teknologi Malaysia
         </p>
         <p class="hero__lead fade-up">
@@ -94,9 +94,10 @@
             </p>
             <p>
               I enjoy the full journey of data: ingesting it, cleaning it, moving it
-              through scalable pipelines, and turning it into dashboards and decisions.
-              I'm comfortable across the stack, from databases and software engineering
-              to high-performance processing and applied AI.
+              through scalable ETL pipelines with SQL, Python, Apache Spark, and Microsoft
+              Azure, then turning it into business-ready reports in Power BI. I'm comfortable
+              across the stack, from databases and high-performance processing to applied
+              machine learning.
             </p>
             <p class="about__note">
               This portfolio is a work in progress — I'll keep adding projects and
@@ -105,8 +106,9 @@
           </div>
           <aside class="about__facts">
             <div class="fact"><span class="fact__label">Focus</span><span class="fact__value">Data Engineering</span></div>
+            <div class="fact"><span class="fact__label">CGPA</span><span class="fact__value">3.93 / 4.00</span></div>
             <div class="fact"><span class="fact__label">University</span><span class="fact__value">UTM</span></div>
-            <div class="fact"><span class="fact__label">Based in</span><span class="fact__value">Malaysia</span></div>
+            <div class="fact"><span class="fact__label">Graduating</span><span class="fact__value">Oct 2027</span></div>
             <div class="fact"><span class="fact__label">Status</span><span class="fact__value">Open to internships</span></div>
           </aside>
         </div>
@@ -120,43 +122,50 @@
         <h2 class="section__title">What I work with</h2>
         <div class="skills">
           <div class="skill-group">
-            <h3>Data Engineering &amp; HPC</h3>
+            <h3>Data Engineering &amp; Cloud</h3>
             <ul class="chips">
-              <li>PySpark</li>
-              <li>Polars</li>
-              <li>Multiprocessing</li>
+              <li>Python</li>
+              <li>SQL</li>
               <li>ETL / Data Pipelines</li>
+              <li>Apache Spark &amp; PySpark</li>
+              <li>Polars</li>
               <li>Web Scraping</li>
               <li>Microsoft Azure</li>
+              <li>AWS</li>
+              <li>Docker</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Data &amp; Analytics</h3>
+            <h3>Analytics &amp; BI</h3>
             <ul class="chips">
-              <li>Python (Pandas / NumPy)</li>
-              <li>SQL &amp; Databases</li>
+              <li>Power BI</li>
+              <li>Excel</li>
+              <li>Alteryx</li>
+              <li>Pandas / NumPy</li>
               <li>Data Mining</li>
               <li>Business Intelligence</li>
-              <li>Data Visualisation</li>
+              <li>MongoDB</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Software &amp; Web</h3>
+            <h3>Machine Learning &amp; AI</h3>
+            <ul class="chips">
+              <li>scikit-learn</li>
+              <li>Time-Series (SARIMA)</li>
+              <li>PCA</li>
+              <li>Clustering</li>
+              <li>CNN / Deep Learning</li>
+              <li>Generative AI</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software &amp; Foundations</h3>
             <ul class="chips">
               <li>Software Engineering</li>
               <li>Object-Oriented Programming</li>
-              <li>Application Development</li>
               <li>Web Development</li>
-              <li>Operating Systems</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Foundations &amp; AI</h3>
-            <ul class="chips">
               <li>Data Structures &amp; Algorithms</li>
-              <li>Artificial Intelligence</li>
-              <li>CNN / Deep Learning</li>
-              <li>Generative AI</li>
+              <li>Operating Systems</li>
               <li>Network Communication</li>
             </ul>
           </div>
@@ -169,7 +178,7 @@
       <div class="container">
         <p class="section__kicker">03 — Projects</p>
         <h2 class="section__title">Selected work</h2>
-        <p class="section__lead">A few projects I built through my coursework. More on the way.</p>
+        <p class="section__lead">A mix of coursework, datathons, and competition projects — from cloud data pipelines to machine learning.</p>
 
         <div class="projects">
           <!-- Project: Scrape Master (featured) -->
@@ -208,6 +217,31 @@
             </a>
           </article>
 
+          <!-- Project: Azure End-to-End Pipeline -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Cloud Data Engineering</span>
+              <span class="project__date">Apr 2026</span>
+            </div>
+            <h3 class="project__title">Azure End-to-End Data Pipeline</h3>
+            <p class="project__desc">
+              A full Azure pipeline that ingests customer and sales data from an on-premises
+              SQL database into Data Lake Storage Gen2 via <strong>Azure Data Factory</strong>,
+              transforms it through a <strong>Bronze–Silver–Gold medallion</strong> architecture
+              in Databricks (PySpark), and loads it into Synapse Analytics. Secured with Key
+              Vault and Entra ID, with a Power BI dashboard reporting sales KPIs by product
+              category and gender.
+            </p>
+            <ul class="project__stack">
+              <li>Azure Data Factory</li>
+              <li>Databricks</li>
+              <li>PySpark</li>
+              <li>Synapse</li>
+              <li>Key Vault</li>
+              <li>Power BI</li>
+            </ul>
+          </article>
+
           <!-- Project: Data Mining -->
           <article class="project">
             <div class="project__top">
@@ -236,6 +270,73 @@
             <a href="https://github.com/AdamRazal1/eportfolio/tree/main/semester%204/SECP2753%20Data%20Mining" target="_blank" rel="noopener" class="project__cta">
               View on GitHub →
             </a>
+          </article>
+
+          <!-- Project: UMDAC Datathon -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Time-Series Forecasting</span>
+              <span class="project__date">Dec 2025</span>
+            </div>
+            <h3 class="project__title">UMDAC Datathon '25 — Cash Flow Analytics</h3>
+            <p class="project__desc">
+              AstraZeneca problem statement. Built a <strong>SARIMA (1,1,1)(1,1,1,4)</strong>
+              model to forecast weekly net cash flow and ending balance over 1- and 6-month
+              horizons. EDA across <strong>8 Asian countries</strong> surfaced Account Payables
+              as the dominant category (70K+ transactions) and Taiwan, Vietnam, and Indonesia
+              as the highest-exposure markets.
+            </p>
+            <ul class="project__stack">
+              <li>Python</li>
+              <li>SARIMA</li>
+              <li>Time-Series</li>
+              <li>Pandas</li>
+              <li>EDA</li>
+            </ul>
+          </article>
+
+          <!-- Project: MDIT x DOSM Datathon -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Analytics &amp; BI</span>
+              <span class="project__date">Sep 2025</span>
+            </div>
+            <h3 class="project__title">MDIT × DOSM Datathon 2025</h3>
+            <p class="project__desc">
+              Built a pipeline ingesting Malaysian economic indicators (CPI, PPI, labour force)
+              into an analytical dataset, then constructed a <strong>Malaysia Economic Indicator
+              Index</strong> using PCA. Delivered an interactive Power BI dashboard across three
+              themes: real wages, income inequality (Gini), and regional economic resilience.
+            </p>
+            <ul class="project__stack">
+              <li>Python</li>
+              <li>PCA</li>
+              <li>Power BI</li>
+              <li>ETL</li>
+              <li>Data Analytics</li>
+            </ul>
+          </article>
+
+          <!-- Project: Kaggle Polymer Prediction -->
+          <article class="project">
+            <div class="project__top">
+              <span class="project__tag">Machine Learning</span>
+              <span class="project__date">Jun 2025</span>
+            </div>
+            <h3 class="project__title">Kaggle — NeurIPS Open Polymer Prediction</h3>
+            <p class="project__desc">
+              Built a pipeline to parse and transform chemical <strong>SMILES</strong> expressions
+              into features with RDKit, then applied scikit-learn for preprocessing and feature
+              engineering. Trained <strong>ensemble models</strong> (histogram gradient boosting)
+              to predict polymer properties.
+            </p>
+            <ul class="project__stack">
+              <li>Python</li>
+              <li>RDKit</li>
+              <li>scikit-learn</li>
+              <li>Pandas / NumPy</li>
+              <li>Gradient Boosting</li>
+            </ul>
           </article>
 
           <!-- Project: eHadir -->
@@ -298,7 +399,7 @@
     <section class="section section--alt" id="education">
       <div class="container">
         <p class="section__kicker">04 — Education</p>
-        <h2 class="section__title">Coursework &amp; learning</h2>
+        <h2 class="section__title">Coursework &amp; certifications</h2>
         <p class="section__lead">
           Bachelor of Computer Science (Data Engineering) — Universiti Teknologi Malaysia
         </p>
@@ -395,6 +496,18 @@
                 <span class="course__name">Network Communication</span>
               </a>
             </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certs">
+          <h3 class="certs__title">Certifications</h3>
+          <div class="certs__list">
+            <span class="cert">Microsoft Certified: Azure Data Fundamentals (DP-900)</span>
+            <span class="cert">Alteryx Designer Core Certification</span>
+            <span class="cert">AWS Cloud Foundations</span>
+            <span class="cert">AWS Cloud Data Pipeline Builder</span>
+            <span class="cert">AWS Cloud Developing</span>
           </div>
         </div>
       </div>
